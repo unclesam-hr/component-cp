@@ -1,17 +1,56 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
-  "license": "",
-  "engines": {
-    "node": ">=6.13.0"
-  },
+  "name": "hrla30-fec-westelms-footer",
+  "version": "1.0.0",
+  "description": "Related Searches and Footer module",
+  "main": "index.js",
   "scripts": {
+    "test": "jest",
+    "start": "nodemon server/index.js",
+    "seed": "node database/seed.js",
+    "build": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamchrispham/hrla30-FEC-westelms-footer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamchrispham/hrla30-FEC-westelms-footer/issues"
+  },
+  "homepage": "https://github.com/iamchrispham/hrla30-FEC-westelms-footer#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "aws": "0.0.3-2",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "cli": "^1.0.1",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "express": "^4.17.1",
+    "jest": "^24.8.0",
+    "lodash": "^4.17.14",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "react-test-renderer": "^16.8.6",
+    "webpack": "^4.20.0",
+    "webpack-cli": "^3.3.5"
   },
   "dependencies": {
-  },
-  "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "@google-cloud/storage": "^3.0.2",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "diff": "^4.0.1",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-id-swiper": "^2.3.1",
+    "sass": "^1.22.3",
+    "sequelize": "^5.9.2",
+    "swiper": "^4.5.0"
   }
 }
