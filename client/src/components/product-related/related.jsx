@@ -86,7 +86,6 @@ class RelatedContainer extends React.Component {
 
 
   mapDataSearches() {
-    console.log('MDS invoked');
     return (
       <div className="br-related-searches-widget">
         <div className="br-related-heading">
@@ -105,7 +104,6 @@ class RelatedContainer extends React.Component {
   }
 
   mapDataProducts() { // unfinished
-    console.log('MDP invoked');
     return (
       <div id="more-products-widget">
         <div id="br-more-results-widget" >

@@ -24,7 +24,18 @@ const Chairs = connection.define('chairs', {
 		type: Sequelize.INTEGER,
 		required: true,
 		allowNull: true
+	},
+	limited_offer: {
+		type: Sequelize.BOOLEAN,
+		required: true,
+		allowNull: false
+	},
+	on_sale: {
+		type: Sequelize.BOOLEAN,
+		required: true,
+		allowNull: false
 	}
+
 
 }, {
 	timestamps: false

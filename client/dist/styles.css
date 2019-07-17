@@ -100,6 +100,17 @@ img {
     justify-content: center;
 }
 
+.swiper-slide p {
+    margin-bottom: 0px;
+}
+.swiper-slide .strikethrough {
+    text-decoration: line-through;
+}
+
+.swiper-slide .price-special {
+    color: #af1a31;
+}
+
 .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
     opacity: 0;
 }

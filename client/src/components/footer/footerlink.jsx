@@ -2,7 +2,6 @@ import React from 'react';
 import { SignupSVG } from './svgs/svgs.jsx';
 
 const FooterLinks = (props) => {
-  // console.log('FooterLinks(props):', props);
   if (props.sublinks.length === 0) { // if we've reached the furthest right of the footer
 
     return (
@@ -15,7 +14,6 @@ const FooterLinks = (props) => {
       {
         props.sublinks.map((link, key) => {
           var { name, url } = link;
-          console.log('Name:', name);
           if (!Array.isArray(name)) { // if nested 'name' is not an array (address)
             if (name === 'Give Us FeedBack') {
               <li className="footer-link" key={`id_${key}`}>
