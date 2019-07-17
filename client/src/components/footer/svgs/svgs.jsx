@@ -26,9 +26,9 @@ const SignupSVG = () => {
                 sign up + get <span>15% off</span>
               </h2>
               <div className="content">
-                <form className="campaign-form">
+                <form className="campaign-form" >
                   <fieldset className="campaign-fieldset">
-                  <input type="email" id="emailAddr" name="emailAddr" value=""
+                  <input type="email" id="emailAddr" name="emailAddr"
                     className="email-field" 
                     placeholder="enter your email address"
                     data-validate="true" maxLength="75" />

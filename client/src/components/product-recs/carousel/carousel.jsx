@@ -23,7 +23,8 @@ class Carousel extends React.Component {
 
 
   getAllImagesAPI() {
-    axios.get('/products-cp/')
+
+    axios.get(`http://localhost:3002/products-cp/`)
       .then(({ data }) => { // can deconstruct object just for the data property
         // var { data } = resp;
         this.setState({

@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import CollectionItem from './collectionItem.jsx';
 
 export default class Collection extends React.Component {
@@ -17,11 +18,25 @@ export default class Collection extends React.Component {
       ]
     }
     this.renderImages = this.renderImages.bind(this);
+    this.getRandomImagesAPI = this.getRandomImagesAPI.bind(this);
   }
 
-componentDidMount () {
-  console.log('Collection attempting to mount...')
-}
+  componentDidMount() {
+    console.log('Collection attempting to mount...')
+    this.getRandomImagesAPI();
+  }
+
+  getRandomImagesAPI() {
+    var limit = 4;
+    var randIDs = [];
+    while (randIDs.length < limit) {
+      var randNum = Math.floor((Math.random() * limit)) + 1;
+      if (randIDs.indexOf(randNum) === -1) {
+        randIDs.push(randNum);
+      }
+    }
+    return;
+  }
 
   renderImages() {
     return (

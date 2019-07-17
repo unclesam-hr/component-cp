@@ -14,35 +14,35 @@ class FooterLinkList extends React.Component {
             sublinks: [
               {
                 name: 'Customer Service',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Track Your Order',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Returns',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Shipping Information',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'International Orders',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Help Topics',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Give Us Feedback',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Contact Us',
-                url: 'http://www.test.com/'
+                url: ''
               },
             ]
           },
@@ -52,39 +52,39 @@ class FooterLinkList extends React.Component {
             sublinks: [
               {
                 name: 'Our Story',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Our Commitments',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Our Partnerships',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'west elm Hotels',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Pressroom',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Designers',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Responsible Detail Glossary',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Careers',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Safety Recalls',
-                url: 'http://www.test.com/'
+                url: ''
               },
             ]
           }
@@ -100,19 +100,19 @@ class FooterLinkList extends React.Component {
               },
               {
                 name: 'west elm Credit Card',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'View Credit Card Account',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Pay Bill Online',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Gift Cards',
-                url: 'http://www.test.com/'
+                url: ''
               },
             ]
           },
@@ -122,11 +122,11 @@ class FooterLinkList extends React.Component {
             sublinks: [
               {
                 name: 'View Online Catalog',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Request A Catalog',
-                url: 'http://www.test.com/'
+                url: ''
               },
             ]
           },
@@ -136,19 +136,19 @@ class FooterLinkList extends React.Component {
             sublinks: [
               {
                 name: 'Overview',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'west elm TRADE',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'west elm CONTRACT',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'west elm WORK',
-                url: 'http://www.test.com/'
+                url: ''
               },
             ]
           }
@@ -160,7 +160,7 @@ class FooterLinkList extends React.Component {
             sublinks: [
               {
                 name: ['3333 Bear St', 'Space 231', 'Costa Mesa CA 92626'],
-                url: 'http://www.test.com/'
+                url: ''
               },
             ]
           },
@@ -170,11 +170,11 @@ class FooterLinkList extends React.Component {
             sublinks: [
               {
                 name: 'Find A Store',
-                url: 'http://www.test.com/'
+                url: ''
               },
               {
                 name: 'Design Crew',
-                url: 'http://www.test.com/'
+                url: ''
               },
             ]
           }
@@ -193,7 +193,6 @@ class FooterLinkList extends React.Component {
   }
 
   mapLinks() {
-    console.log('mapLinks invoked.', Array.isArray(this.state.links));
     if (this.state.links) {
       return this.state.links.map((column, index) => {
         return (
@@ -216,10 +215,6 @@ class FooterLinkList extends React.Component {
       })
     }
   }
-  // return (
-  //   <div className={`footer-column ${column_id}`}>
-  //   </div>
-  // )
 
   render() {
     return (

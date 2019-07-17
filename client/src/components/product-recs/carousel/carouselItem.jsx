@@ -17,14 +17,14 @@ const CarouselItem = ({ image, idx }) => {
 
         <span className="price-special">
           <p className="strikethrough">${min} - ${max}</p>
-          Limited Time Offer ${min - Math.floor(min * .2)} - ${max - Math.floor(max * .2)}
+          Limited Time Offer ${min - Math.ceil(min * .2)} - ${max - Math.ceil(max * .2)}
         </span>
       )
     } else { // if 2 then on sale
       return (
         <span className="price-special">
           <p className="strikethrough">${min} - ${max}</p>
-          On Sale ${min - Math.floor(min * .15)} - ${max - Math.floor(max * .15)}
+          On Sale ${min - Math.ceil(min * .15)} - ${max - Math.ceil(max * .15)}
         </span>
       )
     }
