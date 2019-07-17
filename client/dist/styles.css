@@ -550,6 +550,11 @@ h4, .h4 {
     text-transform: capitalize;
 }
 
+.modal>.content .campaign-form .btn:hover {
+    color: #fff;
+    background: #002230;
+}
+
 .modal>.close {
     cursor: pointer;
     position: absolute;
