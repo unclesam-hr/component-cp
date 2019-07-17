@@ -132,9 +132,6 @@ img {
     /* padding-bottom: 80px; */
 }
 
-.product-Container .products .collection-container .collection {
-    /* display: inline-block; */
-}
 
 .product-Container .products .collection-container .collection h2 {
     font-family: "GT-Eesti 5r", Arial, sans-serif;
@@ -444,6 +441,7 @@ h4, .h4 {
     height: 39px;
     width: 38px;
     text-indent: -999em;
+    background: url(https://www.westelm.com/weimgs/ab/images/i/201928/0139/images/common/transparent.png) 0px 0px repeat;
     outline: none;
     border: none;
     border-radius: 0;
@@ -461,6 +459,10 @@ h4, .h4 {
     z-index: 2;
 }
 
+#footer-container svg.icon-submitArrow g:hover {
+    fill: #fff;
+}
+
 .footer-email-wrapper {
     display: flex;
     border: 1px solid #050708;
@@ -468,14 +470,12 @@ h4, .h4 {
     height: 39px;
     position: relative;
 }
-#footer-email-wrapper {
-    display: flex;
-    border: 1px solid #050708;
-    width: 219px;
-    height: 39px;
-    position: relative;
-}
 
+
+.footer-email-form {
+    background: #fff;
+    width: 221px;
+}
 #footer-email-signup {
     border: 1px;
     border-color: #000000;
@@ -489,3 +489,75 @@ h4, .h4 {
     font-family: "Sanomat 4r", Georgia, serif;
     font-size: 14px;
 }
+
+/*  FOOTER MODAL CSS */
+
+.modal {
+    font-size: 12px;
+  }
+  .modal > .header {
+    font-family: "Sanomat 4r",Georgia,serif;
+    font-size: 48px;
+    color: #363636;
+    line-height: 80px;
+    padding-top: 0;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin: 0 0 20px;
+    text-transform: lowercase;
+  }
+
+  .modal > .header span {
+      color: #f65044;
+  }
+
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+
+  .modal > .content .campaign-form {
+      width: 100%;
+      display: block;
+  }
+
+  .modal > .content .campaign-form .email-field {
+    font-size: 18px;
+    text-align: center;
+    height: 50px;
+    border: 5px solid #f65044;
+    margin-bottom: 10px;
+    box-sizing: unset;
+    padding: 0;
+    width: 325px;
+  }
+
+  .modal > .content .campaign-form .btn {
+    background: #f65044;
+    width: 335px;
+    height: 50px;
+    border: none;
+    position: relative;
+    top: 15px;
+    text-transform: capitalize;
+  }
+
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .popup-content {
+    border: 5px solid #f65044 !important;
+    height: 270px;
+    width: 794px !important;
+    text-align: center;
+  }

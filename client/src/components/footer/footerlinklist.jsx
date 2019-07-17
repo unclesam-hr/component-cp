@@ -197,16 +197,16 @@ class FooterLinkList extends React.Component {
     if (this.state.links) {
       return this.state.links.map((column, index) => {
         return (
-          <div className={`footer-column ${index + 1}`}>
+          <div className={`footer-column ${index + 1}`} key={`div_id${index}`}>
             {
               column.map((content, key) => {
                 var { column_id, sublinks, category } = content;
                 return (
-                  <ul>
+                  <ul key={`ul_${key}`}>
                     <li className="footer-header">
                       <h3>{category}</h3>
                     </li>
-                    <FooterLinks column_id={column_id} category={category} sublinks={sublinks} key={key} />
+                    <FooterLinks key={`id_${key}`} column_id={column_id} category={category} sublinks={sublinks} />
                   </ul>
                 )
               })

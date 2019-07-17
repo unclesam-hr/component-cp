@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const parser = require('body-parser');
 const connection = require('../database');
 const db = require('../database/dbHelpers');
-const port = 3001;
+const port = 3002;
 
 
 app.use(parser.json());

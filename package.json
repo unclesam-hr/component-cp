@@ -2,24 +2,21 @@
   "name": "hrla30-fec-westelms-footer",
   "version": "1.0.0",
   "description": "Related Searches and Footer module",
-  "main": "index.js",
+  "main": "./server/index.js",
   "scripts": {
-    "test": "jest",
+    "test:w": "jest --watchAll",
+    "test:c": "jest --coverage",
     "start": "nodemon server/index.js",
     "seed": "node database/seed.js",
     "build": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamchrispham/hrla30-FEC-westelms-footer.git"
+    "url": "git+https://github.com/unclesam-hr/component-cp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamchrispham/hrla30-FEC-westelms-footer/issues"
-  },
-  "homepage": "https://github.com/iamchrispham/hrla30-FEC-westelms-footer#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
@@ -49,6 +46,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-id-swiper": "^2.3.1",
+    "reactjs-popup": "^1.4.1",
     "sass": "^1.22.3",
     "sequelize": "^5.9.2",
     "swiper": "^4.5.0"
