@@ -6,7 +6,7 @@ const parser = require('body-parser');
 const connection = require('../database');
 const db = require('../database/dbHelpers');
 const port = 3002;
-
+const cors = require('cors')
 
 app.use(parser.json());
 app.use(parser.urlencoded({extended: true}));
@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 */
 
 // console.log(`***ROW ${i}*** `, row['dataValues']['url']); to reference a property in a row of data
-app.get('/products-cp/', (req, res) => {
+app.get('/products-cp/', cors(), (req, res) => {
 	db.getChairs()
 		.then((records) => {
 			res.status(200).send(JSON.stringify(records)); // works, but fewer lines of code just stringifying the data.  higher level fct.
