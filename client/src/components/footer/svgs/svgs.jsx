@@ -22,13 +22,17 @@ const SignupSVG = () => {
               <a className="close" onClick={close}>
                 &times;
               </a>
-              <div className="header"> sign up + get <span>15% off</span></div>
+              <h2> 
+                sign up + get <span>15% off</span>
+              </h2>
               <div className="content">
                 <form className="campaign-form">
+                  <fieldset className="campaign-fieldset">
                   <input type="email" id="emailAddr" name="emailAddr" value=""
                     className="email-field" 
                     placeholder="enter your email address"
-                    data-validate="true" maxlength="75" />
+                    data-validate="true" maxLength="75" />
+                  </fieldset>
                   <input className="btn" type="submit" alt="SUBMIT" title="SUBMIT" value="SUBMIT" />
                 </form>
               </div>

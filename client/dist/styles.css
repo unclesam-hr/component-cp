@@ -132,7 +132,6 @@ img {
     /* padding-bottom: 80px; */
 }
 
-
 .product-Container .products .collection-container .collection h2 {
     font-family: "GT-Eesti 5r", Arial, sans-serif;
     font-size: 17.7px;
@@ -433,6 +432,7 @@ h4, .h4 {
 #footer-container .hover-it {
     padding-bottom: 30px;
 }
+
 #footer-container button.btn_sign-up {
     z-index: 1;
     position: absolute;
@@ -471,11 +471,11 @@ h4, .h4 {
     position: relative;
 }
 
-
 .footer-email-form {
     background: #fff;
     width: 221px;
 }
+
 #footer-email-signup {
     border: 1px;
     border-color: #000000;
@@ -494,9 +494,10 @@ h4, .h4 {
 
 .modal {
     font-size: 12px;
-  }
-  .modal > .header {
-    font-family: "Sanomat 4r",Georgia,serif;
+}
+
+.modal>h2 {
+    font-family: "Sanomat 4r", Georgia, serif;
     font-size: 48px;
     color: #363636;
     line-height: 80px;
@@ -505,23 +506,28 @@ h4, .h4 {
     font-weight: 500;
     margin: 0 0 20px;
     text-transform: lowercase;
-  }
+}
 
-  .modal > .header span {
-      color: #f65044;
-  }
+.modal>h2 span {
+    color: #f65044;
+}
 
-  .modal > .content {
+.modal>.content {
     width: 100%;
     padding: 10px 5px;
-  }
+}
 
-  .modal > .content .campaign-form {
-      width: 100%;
-      display: block;
-  }
+.modal>.content .campaign-form {
+    width: 100%;
+    display: block;
+}
 
-  .modal > .content .campaign-form .email-field {
+.modal>.content .campaign-form .campaign-fieldset {
+    min-width: auto;
+    padding-right: 0px;
+}
+
+.modal>.content .campaign-form .email-field {
     font-size: 18px;
     text-align: center;
     height: 50px;
@@ -530,9 +536,11 @@ h4, .h4 {
     box-sizing: unset;
     padding: 0;
     width: 325px;
-  }
+}
 
-  .modal > .content .campaign-form .btn {
+.modal>.content .campaign-form .btn {
+    font-size: 18px;
+    color: #000000;
     background: #f65044;
     width: 335px;
     height: 50px;
@@ -540,9 +548,9 @@ h4, .h4 {
     position: relative;
     top: 15px;
     text-transform: capitalize;
-  }
+}
 
-  .modal > .close {
+.modal>.close {
     cursor: pointer;
     position: absolute;
     display: block;
@@ -553,11 +561,11 @@ h4, .h4 {
     font-size: 32px;
     background: #ffffff;
     color: #000000;
-  }
+}
 
-  .popup-content {
+.popup-content {
     border: 5px solid #f65044 !important;
     height: 270px;
     width: 794px !important;
     text-align: center;
-  }
+}
