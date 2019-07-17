@@ -6,7 +6,6 @@ const CollectionItem = ({ image }) => {
     <div className="collectionItem" id="collectionItem">
       <span><img src={imgURL} alt={name} />
         <p>
-
           {name}
         </p>
       </span>

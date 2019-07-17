@@ -1,9 +1,8 @@
 import React from 'react';
 
 const CarouselItem = ({ image, idx }) => {
-  console.log('Image Data:', image);
 
-  var calculatePrice = (offer, min, max) => { // expected algorithm to break
+  var calculatePrice = (offer, min, max) => {
     // if 0 no special deal
     if (offer === 0) {
       return (
@@ -15,7 +14,6 @@ const CarouselItem = ({ image, idx }) => {
       )
     } else if (offer === 1) { // if 1 then limited time offer
       return (
-        // css test
 
         <span className="price-special">
           <p className="strikethrough">${min} - ${max}</p>
@@ -34,17 +32,17 @@ const CarouselItem = ({ image, idx }) => {
 
   return (
     <div className="swiper-slide">
+
       <span id={`img ${idx}`}>
         <img src={image['url']} />
-        <p>{image['name']}</p>
-        <p>
-          {
-            image['limited_offer'] ? calculatePrice(1, image['min_price'], image['max_price']) :
-              (image['on_sale'] ? calculatePrice(2, image['min_price'], image['max_price']) :
-                (calculatePrice(0, image['min_price'], image['max_price'])))
-          }
-        </p>
+        {image['name']}
+        {image['limited_offer'] ? calculatePrice(1, image['min_price'], image['max_price']) :
+            (image['on_sale'] ? calculatePrice(2, image['min_price'], image['max_price']) :
+              (calculatePrice(0, image['min_price'], image['max_price'])))
+        }
+
       </span>
+
     </div>
   )
 }

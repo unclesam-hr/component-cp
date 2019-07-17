@@ -44,7 +44,7 @@ class RelatedContainer extends React.Component {
     ]
     this.setState({
       products: products
-    }, () => console.log('getRelatedProducts', this.state.products))
+    })
   }
 
   getRelatedSearches() {
@@ -81,7 +81,7 @@ class RelatedContainer extends React.Component {
     ]
     this.setState({
       searches: searches
-    }, () => console.log('getRelatedSearches', this.state.searches))
+    })
   }
 
 
