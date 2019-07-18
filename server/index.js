@@ -12,20 +12,13 @@ app.use(parser.json());
 app.use(parser.urlencoded({extended: true}));
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../client/dist')));
-/* ROW DATA
-[ 'dataValues',
-  '_previousDataValues',
-  '_changed',
-  '_modelOptions',
-  '_options',
-  'isNewRecord' ]
-*/
 
-// console.log(`***ROW ${i}*** `, row['dataValues']['url']); to reference a property in a row of data
-app.get('/products-cp/', cors(), (req, res) => {
+
+// app.options('/products-cp', cors());
+app.get('/products-cp/', cors(), (req, res) => { // grab list of chairs
 	db.getChairs()
 		.then((records) => {
-			res.status(200).send(JSON.stringify(records)); // works, but fewer lines of code just stringifying the data.  higher level fct.
+			res.status(200).send(JSON.stringify(records)); 
 		})
 		.catch( (err) => {
 			console.error(err);
@@ -33,18 +26,18 @@ app.get('/products-cp/', cors(), (req, res) => {
 		});
 })
 
-app.get('/products-cp/:id', (req, res) => { // grab by ID
-	var { id } = req.params;
-	console.log(`/products-cp/${id}`, JSON.stringify(id));
-	db.getChairByID(id)
-		.then((data) => {
-			var record = JSON.stringify(data);
-			res.status(200).send(record);
-		})
-	.catch( (err) => {
-		console.error(err);
-		res.status(404).send('Error retrieving data.');
-	});
-})
+// app.get('/products-cp/:id', (req, res) => { // grab chair by ID
+// 	var { id } = req.params;
+// 	console.log(`/products-cp/${id}`, JSON.stringify(id));
+// 	db.getChairByID(id)
+// 		.then((data) => {
+// 			var record = JSON.stringify(data);
+// 			res.status(200).send(record);
+// 		})
+// 	.catch( (err) => {
+// 		console.error(err);
+// 		res.status(404).send('Error retrieving data.');
+// 	});
+// })
 
 app.listen(port, () => console.log(`Listening to port ${port}`))
