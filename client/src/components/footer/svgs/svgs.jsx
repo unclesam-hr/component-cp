@@ -18,7 +18,7 @@ const SignupSVG = () => {
           </svg>
         </button>} modal>
           {close => (
-            <div className="modal">
+            <div className="modal-cp">
               <a className="close" onClick={close}>
                 &times;
               </a>
