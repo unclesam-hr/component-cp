@@ -22,7 +22,6 @@ export default class Collection extends React.Component {
   }
 
   componentDidMount() {
-    console.log('Collection attempting to mount...')
     this.getRandomImagesAPI();
   }
 

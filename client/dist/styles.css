@@ -511,11 +511,11 @@ h4, .h4 {
 
 /*  FOOTER MODAL CSS */
 
-.modal {
+#components-cp .modal {
     font-size: 12px;
 }
 
-.modal>h2 {
+#components-cp .modal>h2 {
     font-family: "Sanomat 4r", Georgia, serif;
     font-size: 48px;
     color: #363636;
@@ -527,26 +527,26 @@ h4, .h4 {
     text-transform: lowercase;
 }
 
-.modal>h2 span {
+#components-cp .modal > h2 span {
     color: #f65044;
 }
 
-.modal>.content {
+#components-cp .modal .content {
     width: 100%;
     padding: 10px 5px;
 }
 
-.modal>.content .campaign-form {
+#components-cp .modal .content .campaign-form {
     width: 100%;
     display: block;
 }
 
-.modal>.content .campaign-form .campaign-fieldset {
+#components-cp  .modal .content .campaign-form .campaign-fieldset {
     min-width: auto;
     padding-right: 0px;
 }
 
-.modal>.content .campaign-form .email-field {
+#components-cp .modal .content .campaign-form .email-field {
     font-size: 18px;
     text-align: center;
     height: 50px;
@@ -557,7 +557,7 @@ h4, .h4 {
     width: 325px;
 }
 
-.modal>.content .campaign-form .btn {
+#components-cp .modal .content .campaign-form .btn {
     font-size: 18px;
     color: #000000;
     background: #f65044;
@@ -569,12 +569,12 @@ h4, .h4 {
     text-transform: capitalize;
 }
 
-.modal>.content .campaign-form .btn:hover {
+#components-cp .modal .content .campaign-form .btn:hover {
     color: #fff;
     background: #002230;
 }
 
-.modal>.close {
+#components-cp .modal .close {
     cursor: pointer;
     position: absolute;
     display: block;
@@ -587,7 +587,7 @@ h4, .h4 {
     color: #000000;
 }
 
-.popup-content {
+#components-cp .popup-content {
     border: 5px solid #f65044 !important;
     height: 270px;
     width: 794px !important;

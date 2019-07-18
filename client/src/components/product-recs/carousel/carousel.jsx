@@ -16,7 +16,6 @@ class Carousel extends React.Component {
   }
 
   componentDidMount() {
-    console.log('Carousel component mounting...');
     this.getAllImagesAPI();
     
   }
@@ -36,7 +35,6 @@ class Carousel extends React.Component {
   }
 
   renderCarousel() {
-    console.log('Attempting to render Carousel...');
     const params = {
       spaceBetween: 20, // 20px
       initialSlide: 0,

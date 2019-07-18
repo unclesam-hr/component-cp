@@ -14,9 +14,7 @@ class RelatedContainer extends React.Component {
   }
 
   componentDidMount() {
-    console.log('Related Products mounting...');
     this.getRelatedProducts();
-    console.log('Related Searches mounting...');
     this.getRelatedSearches();
   }
 
