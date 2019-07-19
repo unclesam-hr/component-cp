@@ -11,6 +11,11 @@ const Chairs = connection.define('chairs', {
 		type: Sequelize.STRING,
 		required: true
 	},
+	collection_id : {
+		type: Sequelize.INTEGER,
+		required: true,
+		allowNull: false
+	},
 	url: {
 		type: Sequelize.STRING,
 		required: true

@@ -1,4 +1,7 @@
 node_modules
-credentials.js
 FEC-West-Elms-00cb7535d2b5.json
 gcloud
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

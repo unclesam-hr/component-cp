@@ -4,9 +4,12 @@ getChairs = () => {
     return Models.Chairs.findAll({});
 }
 
-getChairByID = (id) => {
-    return Models.Chairs.findOne({
-        id
+getChairByCollectionID = (id) => {
+    return Models.Chairs.findAll({
+        where:
+        {
+            collection_id: Number(id)
+        }
     });
 }
 
@@ -18,6 +21,6 @@ getChairByName = (name) => {
 
 module.exports = {
     getChairs,
-    getChairByID,
+    getChairByCollectionID,
     getChairByName
 }

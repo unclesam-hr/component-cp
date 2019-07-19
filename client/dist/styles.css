@@ -79,51 +79,51 @@ img {
 
 /* Scroller CSS */
 
-.carousel-container {
+#components-cp .carousel-container {
     position: relative;
     padding-bottom: 80px;
 }
 
-.carousel-container img {
+#components-cp .carousel-container img {
     width: 225px;
     height: 247px;
 }
 
-.swiper-container {
+#components-cp .swiper-container {
     width: 100%;
 }
 
 
-.swiper-slide {
+#components-cp .swiper-slide {
     max-height: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.swiper-slide span {
+#components-cp .swiper-slide span {
     font-size: 12px;
 }
 
-.swiper-slide p {
+#components-cp .swiper-slide p {
     margin-top: 3px;
     margin-bottom: 0px;
     font-size: 12px;
 }
 
-.swiper-slide .strikethrough {
+#components-cp .swiper-slide .strikethrough {
     text-decoration: line-through;
 }
 
-.swiper-slide .price-special {
+#components-cp .swiper-slide .price-special {
     color: #af1a31;
 }
 
-.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+#components-cp .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
     opacity: 0;
 }
 
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+#components-cp .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     background-image: url(https://storage.cloud.google.com/afucktonofchairs/right-arrow.svg);
     left: 0px;
     right: auto;
@@ -133,7 +133,7 @@ img {
     background-size: 37px 60px;
 }
 
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+#components-cp .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     background-image: url(https://storage.cloud.google.com/afucktonofchairs/right-arrow.svg);
     right: 0px;
     left: auto;

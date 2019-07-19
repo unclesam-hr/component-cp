@@ -12,12 +12,13 @@ class Carousel extends React.Component {
       images: []
     }
     this.getAllImagesAPI = this.getAllImagesAPI.bind(this);
+    this.getAllImagesByCollectionID = this.getAllImagesByCollectionID.bind(this);
     this.renderCarousel = this.renderCarousel.bind(this);
   }
 
   componentDidMount() {
-    this.getAllImagesAPI();
-    
+    // this.getAllImagesAPI();
+    this.getAllImagesByCollectionID();
   }
 
 
@@ -30,7 +31,25 @@ class Carousel extends React.Component {
         }, () => render(this.renderCarousel(), document.getElementById('carousel-container')))
       })
       .catch((err) => {
-        console.log('Error grabbing images.', err);
+        console.log('Error grabbing images(getAllImagesAPI).', err);
+      })
+  }
+
+  getAllImagesByCollectionID(id) {
+    
+    function randNum () {
+      return Math.floor(Math.random() * 5)+1;
+    }
+    var id = id || randNum();
+
+    axios.get(`http://localhost:3002/products-cp/${id}`)
+      .then(({ data }) => { 
+        this.setState({
+          images: data
+        }, () => render(this.renderCarousel(), document.getElementById('carousel-container')))
+      })
+      .catch((err) => {
+        console.log('Error grabbing images(getAllImagesByCollectionID).', err);
       })
   }
 

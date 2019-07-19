@@ -26,18 +26,19 @@ app.get('/products-cp/', cors(), (req, res) => { // grab list of chairs
 		});
 })
 
-// app.get('/products-cp/:id', (req, res) => { // grab chair by ID
-// 	var { id } = req.params;
-// 	console.log(`/products-cp/${id}`, JSON.stringify(id));
-// 	db.getChairByID(id)
-// 		.then((data) => {
-// 			var record = JSON.stringify(data);
-// 			res.status(200).send(record);
-// 		})
-// 	.catch( (err) => {
-// 		console.error(err);
-// 		res.status(404).send('Error retrieving data.');
-// 	});
-// })
+
+app.get('/products-cp/:id', cors(),(req, res) => { // grab chair by ID
+	var { id } = req.params;
+	console.log(`/products-cp/${id}`, JSON.stringify(id));
+	db.getChairByCollectionID(id)
+		.then((data) => {
+			var record = JSON.stringify(data);
+			res.status(200).send(record);
+		})
+	.catch( (err) => {
+		console.error(err);
+		res.status(404).send('Error retrieving data.');
+	});
+})
 
 app.listen(port, () => console.log(`Listening to port ${port}`))
