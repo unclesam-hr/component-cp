@@ -2,7 +2,6 @@ import React from 'react';
 import {render} from 'react-dom';
 import Swiper from "react-id-swiper";
 import axios from 'axios';
-// import Scroller from './scroller.jsx';
 import CarouselItem from './carouselItem.jsx';
 
 class Carousel extends React.Component {
@@ -18,12 +17,12 @@ class Carousel extends React.Component {
 
   componentDidMount() {
     // this.getAllImagesAPI();
-    this.getAllImagesByCollectionID();
+    this.getAllImagesByCollectionID('carousel-container');
   }
 
 
   getAllImagesAPI() {
-    axios.get(`http://localhost:3002/products-cp/`)
+    axios.get(`/products-cp/`)
       .then(({ data }) => { // can deconstruct object just for the data property
         // var { data } = resp;
         this.setState({
@@ -35,18 +34,18 @@ class Carousel extends React.Component {
       })
   }
 
-  getAllImagesByCollectionID(id) {
+  getAllImagesByCollectionID(div_id, id) {
     
     function randNum () {
       return Math.floor(Math.random() * 5)+1;
     }
     var id = id || randNum();
 
-    axios.get(`http://localhost:3002/products-cp/${id}`)
+    axios.get(`products-cp/${id}`)
       .then(({ data }) => { 
         this.setState({
           images: data
-        }, () => render(this.renderCarousel(), document.getElementById('carousel-container')))
+        }, () => render(this.renderCarousel(), document.getElementById(div_id)))
       })
       .catch((err) => {
         console.log('Error grabbing images(getAllImagesByCollectionID).', err);
@@ -90,5 +89,4 @@ class Carousel extends React.Component {
   }
 }
 
-// style={{ width: 225 + 'px', height: 247 + 'px' }}
 export default Carousel;
