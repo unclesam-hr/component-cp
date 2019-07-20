@@ -59,7 +59,7 @@ class Carousel extends React.Component {
       slidesPerView: 4,
       slidesPerGroup: 4,
       pagination: {
-        clickable: true
+        clickable: false
       },
       navigation: {
         nextEl: '.swiper-button-next',

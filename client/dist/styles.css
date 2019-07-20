@@ -84,6 +84,7 @@ img {
     padding-bottom: 80px;
 }
 
+
 #components-cp .carousel-container img {
     width: 225px;
     height: 247px;
@@ -104,7 +105,10 @@ img {
 #components-cp .swiper-slide span {
     font-size: 12px;
 }
-
+#components-cp .swiper-slide a {
+    text-decoration: none;
+    color: #000;
+}
 #components-cp .swiper-slide p {
     margin-top: 3px;
     margin-bottom: 0px;
@@ -125,21 +129,21 @@ img {
 
 #components-cp .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     background-image: url(https://storage.cloud.google.com/afucktonofchairs/right-arrow.svg) !important;
-    left: 0px;
-    right: auto;
+    left: 0px !important;; 
+    right: auto !important;;
     transform: rotate(180deg);
-    width: 37px;
-    height: 60px;
-    background-size: 37px 60px;
+    width: 37px !important;;
+    height: 60px !important;;
+    background-size: 37px 60px !important;;
 }
 
 #components-cp .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     background-image: url(https://storage.cloud.google.com/afucktonofchairs/right-arrow.svg) !important;
-    right: 0px;
-    left: auto;
-    width: 37px;
-    height: 60px;
-    background-size: 37px 60px;
+    right: 0px !important;;
+    left: auto !important;;
+    width: 37px !important;;
+    height: 60px !important;;
+    background-size: 37px 60px !important;;
 }
 
 /* Collection CSS */

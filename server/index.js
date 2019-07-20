@@ -1,11 +1,11 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const morgan = require('morgan');
 const parser = require('body-parser');
 const connection = require('../database');
 const db = require('../database/dbHelpers');
 const port = 3002;
+const morgan = require('morgan');
 const cors = require('cors')
 
 app.use(parser.json());

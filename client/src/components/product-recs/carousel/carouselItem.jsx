@@ -32,17 +32,17 @@ const CarouselItem = ({ image, idx }) => {
 
   return (
     <div className="swiper-slide">
-
-      <span id={`img ${idx}`}>
-        <img src={image['url']} />
-        {image['name']}
-        {image['limited_offer'] ? calculatePrice(1, image['min_price'], image['max_price']) :
+      <a href=''>
+        <span id={`img ${idx}`}>
+          <img src={image['url']} />
+          {image['name']}
+          {image['limited_offer'] ? calculatePrice(1, image['min_price'], image['max_price']) :
             (image['on_sale'] ? calculatePrice(2, image['min_price'], image['max_price']) :
               (calculatePrice(0, image['min_price'], image['max_price'])))
-        }
+          }
 
-      </span>
-
+        </span>
+      </a>
     </div>
   )
 }
