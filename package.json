@@ -4,13 +4,7 @@
   "description": "Related Searches and Footer module",
   "main": "./server/index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "node server/index.js",
-=======
-    "test:w": "jest --watchAll",
-    "test:c": "jest --coverage",
-    "start": "nodemon server/index.js",
->>>>>>> parent of 321c590... testing deployment
     "seed": "node database/seed.js",
     "build": "webpack -d --watch"
   },
