@@ -521,6 +521,11 @@ h4, .h4 {
     padding-bottom: 30px;
 }
 
+#footer-container .hover-it .footer-address {
+    margin-bottom: 10px;
+    font-size: 12.444px;
+}
+
 #footer-container button.btn_sign-up {
     z-index: 1;
     position: absolute;
