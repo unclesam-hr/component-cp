@@ -4,7 +4,7 @@ const app = express();
 const parser = require('body-parser');
 const connection = require('../database');
 const db = require('../database/dbHelpers');
-const port = 3002;
+const port = process.env.PORT || 3002;
 const morgan = require('morgan');
 const cors = require('cors')
 

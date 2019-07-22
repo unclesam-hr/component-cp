@@ -2,6 +2,7 @@
 FEC-West-Elms-00cb7535d2b5.json
 gcloud
 node_modules
+testdeploy.zip
 # Elastic Beanstalk Filesg
 .ebextensions
 .elasticbeanstalk/*

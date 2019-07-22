@@ -84,7 +84,6 @@ img {
     padding-bottom: 80px;
 }
 
-
 #components-cp .carousel-container img {
     width: 225px;
     height: 247px;
@@ -93,7 +92,6 @@ img {
 #components-cp .swiper-container {
     width: 100%;
 }
-
 
 #components-cp .swiper-slide {
     max-height: 20rem;
@@ -105,10 +103,12 @@ img {
 #components-cp .swiper-slide span {
     font-size: 12px;
 }
+
 #components-cp .swiper-slide a {
     text-decoration: none;
     color: #000;
 }
+
 #components-cp .swiper-slide p {
     margin-top: 3px;
     margin-bottom: 0px;
@@ -129,21 +129,31 @@ img {
 
 #components-cp .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     background-image: url(https://storage.cloud.google.com/afucktonofchairs/right-arrow.svg) !important;
-    left: 0px !important;; 
-    right: auto !important;;
+    left: 0px !important;
+    ;
+    right: auto !important;
+    ;
     transform: rotate(180deg);
-    width: 37px !important;;
-    height: 60px !important;;
-    background-size: 37px 60px !important;;
+    width: 37px !important;
+    ;
+    height: 60px !important;
+    ;
+    background-size: 37px 60px !important;
+    ;
 }
 
 #components-cp .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
     background-image: url(https://storage.cloud.google.com/afucktonofchairs/right-arrow.svg) !important;
-    right: 0px !important;;
-    left: auto !important;;
-    width: 37px !important;;
-    height: 60px !important;;
-    background-size: 37px 60px !important;;
+    right: 0px !important;
+    ;
+    left: auto !important;
+    ;
+    width: 37px !important;
+    ;
+    height: 60px !important;
+    ;
+    background-size: 37px 60px !important;
+    ;
 }
 
 /* Collection CSS */
@@ -430,6 +440,61 @@ h4, .h4 {
     font-size: 12.444px;
 }
 
+#footer-container .footer-link svg {
+    width: 13px;
+    height: 13px;
+}
+#footer-container .social-container .icons > ul {
+    display:block;
+    margin: 0;
+    clear: both;
+}
+
+
+
+#footer-container .social-container .icons>ul li {
+    display: inline-block;
+    float: left;
+    width: 16%;
+    margin: 0;
+} 
+
+#footer-container .social-container .icons > ul li svg {
+    width: 26px;
+    height: 30px;
+}
+
+#footer-container .social-container .icons .prefix__icon-facebook circle:hover {
+    fill: #3b5998;
+    stroke: #3b5998;
+}
+
+#footer-container .social-container .icons .prefix__icon-twitter circle:hover {
+    fill:#0084b4;
+    stroke:#0084b4;
+}
+
+#footer-container .social-container .icons .prefix__icon-pinterest circle:hover {
+    fill:#c92228;
+    stroke:#c92228;
+}
+
+#footer-container .social-container .icons .prefix__icon-instagram circle:hover {
+    fill:#3f279b;
+    stroke:#3f279b
+}
+
+#footer-container .social-container .icons .prefix__icon-youTube circle:hover {
+    fill:#e52d27;
+    stroke:#e52d27;
+}
+
+#footer-container .social-container .frontandmain > svg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 93%;
+}
+
 #footer-container ul .footer-link .footer-link__title-link {
     padding-bottom: 2px;
     border-bottom: 1px solid transparent;
@@ -474,7 +539,7 @@ h4, .h4 {
     background: #050708;
 }
 
-#footer-container button.btn_sign-up:hover > svg g {
+#footer-container button.btn_sign-up:hover>svg g {
     fill: #fff;
 }
 
@@ -484,7 +549,6 @@ h4, .h4 {
     top: 12px;
     z-index: 2;
 }
-
 
 .footer-email-wrapper {
     display: flex;
@@ -519,7 +583,7 @@ h4, .h4 {
     font-size: 12px;
 }
 
-#components-cp .modal-cp > h2 {
+#components-cp .modal-cp>h2 {
     font-family: "Sanomat 4r", Georgia, serif;
     font-size: 48px;
     color: #363636;
@@ -531,26 +595,26 @@ h4, .h4 {
     text-transform: lowercase;
 }
 
-#components-cp .modal-cp > h2 span {
+#components-cp .modal-cp>h2 span {
     color: #f65044;
 }
 
-#components-cp .modal-cp > .content {
+#components-cp .modal-cp>.content {
     width: 100%;
     padding: 10px 5px;
 }
 
-#components-cp .modal-cp > .content .campaign-form {
+#components-cp .modal-cp>.content .campaign-form {
     width: 100%;
     display: block;
 }
 
-#components-cp  .modal-cp > .content .campaign-form .campaign-fieldset {
+#components-cp .modal-cp>.content .campaign-form .campaign-fieldset {
     min-width: auto;
     padding-right: 0px;
 }
 
-#components-cp .modal-cp > .content .campaign-form .email-field {
+#components-cp .modal-cp>.content .campaign-form .email-field {
     font-size: 18px;
     text-align: center;
     height: 50px;
@@ -561,7 +625,7 @@ h4, .h4 {
     width: 325px;
 }
 
-#components-cp .modal-cp > .content .campaign-form .btn {
+#components-cp .modal-cp>.content .campaign-form .btn {
     font-size: 18px;
     color: #000000;
     background: #f65044;
@@ -573,12 +637,12 @@ h4, .h4 {
     text-transform: capitalize;
 }
 
-#components-cp .modal-cp > .content .campaign-form .btn:hover {
+#components-cp .modal-cp>.content .campaign-form .btn:hover {
     color: #fff;
     background: #002230;
 }
 
-#components-cp .modal-cp > .close {
+#components-cp .modal-cp>.close {
     cursor: pointer;
     position: absolute;
     display: block;
