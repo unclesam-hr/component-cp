@@ -112,7 +112,7 @@ class RelatedContainer extends React.Component {
             {this.state.products.map((product, i) => {
               var { name, imgURL, url, desc } = product;
               return (
-                <RelatedProducts name={name} imgURL={imgURL} url={url} desc={desc} key={i} />
+                <RelatedProducts name={name} imgURL={imgURL} url={url} desc={desc} key={i} i={i} />
               )
             })
             }
